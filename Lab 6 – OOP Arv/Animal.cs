@@ -18,29 +18,25 @@ namespace Lab_6___OOP_Arv
         
         public  Animal(string animal="Unknown",string gender="Unknown", int age=0, string name="Unknown",int legs=0)
         {
+            // fem egenskaper alla djur delar med varandra.
             _animal = animal;
             _gender = gender;
             _age = age;
             _name = name;
             _legs = legs;
-            //Console.WriteLine($"Djur:{animal} Kön:{gender} Ålder:{age} Namn:{name} Antal ben:{legs}");
-        }
-        public virtual void Print()
-        {
-
         }
 
-        public void Sleep()
+        public virtual void Sleep()
         {
-            Console.WriteLine("The animal is sleeping");
+            Console.WriteLine("The animal is sleeping\n");
         }
-        public void Eat()
+        public virtual void Eat()
         {
-            Console.WriteLine("The animal is eating");
+            Console.WriteLine("The animal is eating\n");
         }
-        public void Play()
+        public virtual void Play()
         {
-            Console.WriteLine("The animal is playing");
+            Console.WriteLine("The animal is playing\n");
         }
         
     }
