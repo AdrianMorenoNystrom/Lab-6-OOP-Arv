@@ -9,34 +9,35 @@ namespace Lab_6___OOP_Arv
     public class Marsvin : Animal
     {
 
-        public double Weight { get; set; }
+        public double Weight;
 
         public Marsvin(string animal="Marsvin", string gender="Hona", int age=2, string name="Luna", int legs=4,double weight=0.5)
             :base(animal,gender,age,name,legs)
         {
             Weight = weight;
-            Console.WriteLine($"Djur:{animal} Kön:{gender} Ålder: {age} Namn: {name} Antal ben: {legs}, Vikt: {weight}kg\n");
+            Console.WriteLine($"Djur:{animal} Kön:{gender} Ålder:{age} Namn:{name} Antal ben:{legs}, Vikt:{weight}kg\n");
 
         }
+
         public override void Sleep()
         {
             Console.WriteLine("Marsvinet sover");
         }
-
         public override void Eat()
         {
             Console.WriteLine("Marsvinet äter");
         }
-
         public override void Play()
         {
             Console.WriteLine("Marsvinet leker\n");
         }
-
         public void MakeSound()
         {
-            Console.WriteLine("????");
+            
+            Console.WriteLine("squeek\n");
         }
+
+        //Unik metod för marsvin som säger om den är hungrig eller inte. Den slumpar mellan 1 och 2 och ger olika utmatning beroende på vilken siffra det blir.
         public void IsHungry()
         {
             Random ran = new Random();

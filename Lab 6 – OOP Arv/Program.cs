@@ -5,13 +5,16 @@
     {
         static void Main(string[] args)
         {
-            Animal animal = new Animal();
 
             Cat katt = new Cat();
 
             Dog hund = new Dog();
 
             Marsvin marsvin = new Marsvin();
+
+            Pitbull pitbull = new Pitbull("Hund", "Hane", 4, "Manfred", 4, "Brun", "Pitbull");
+
+            Chihuahua chihuahua = new Chihuahua("Hund", "Hona", 2, "Karin", 4, "Grön", 2);
 
             //Varje klass har en egen metod.
             marsvin.IsHungry();
@@ -32,10 +35,15 @@
             katt.Play();
 
             //Djurens läte
-            Console.WriteLine("Djurens läte");
+            Console.WriteLine("Djurens läte:");
             hund.MakeSound();
             katt.MakeSound();
             marsvin.MakeSound();
+
+            //Arv i två nivåer, metoder.
+            pitbull.Run();
+            chihuahua.Swim();
+
             
             
 
