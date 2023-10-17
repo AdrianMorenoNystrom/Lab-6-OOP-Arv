@@ -8,7 +8,9 @@ namespace Lab_6___OOP_Arv
 {
     public class Dog : Animal
     {
+        //Unikt field för Hund som är ögonfärg.
         public string EyeColor;
+        //Konstruktor för hund med basvärden.
         public Dog(string animal="Hund", string gender="Hane", int age=6, string name="Herman", int legs=4,string eyecolor="Blå")
                 : base(animal, gender, age, name, legs)
         {
@@ -16,6 +18,7 @@ namespace Lab_6___OOP_Arv
             Console.WriteLine($"Djur:{animal} Kön:{gender} Ålder:{age} Namn:{name} Antal ben:{legs}, Ögonfärg: {eyecolor}\n");
         }
 
+        //Overridar metoderna jag skapade i Animal och gör unika för denna klass.
         public override void Sleep()
         {
             Console.WriteLine("Hunden sover");

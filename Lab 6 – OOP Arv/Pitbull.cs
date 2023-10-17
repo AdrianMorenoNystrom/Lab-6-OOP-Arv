@@ -8,7 +8,9 @@ namespace Lab_6___OOP_Arv
 {
     public class Pitbull : Dog
     {
+        //Unikt field för Pitbull som är ras.
         public string Breed;
+        //Konstruktor för Pitbull med basvärden.
         public Pitbull(string animal= "Hund", string gender = "Hane", int age = 6, string name = "Herman", int legs = 4, string eyecolor = "Blå",string breed="Pitbull")
                 : base(animal, gender, age, name, legs)
         {

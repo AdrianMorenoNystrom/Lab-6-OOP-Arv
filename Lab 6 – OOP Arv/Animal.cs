@@ -15,9 +15,9 @@ namespace Lab_6___OOP_Arv
         private string _animal { get; set; }
         private string _name { get; set; }
         private int _legs{ get; set; }
-        
+
         //Konstruktor för att skapa nya djur.
-        public  Animal(string animal="Unknown",string gender="Unknown", int age=0, string name="Unknown",int legs=0)
+        public Animal(string animal="Unknown",string gender="Unknown", int age=0, string name="Unknown",int legs=0)
         {
             // fem egenskaper alla djur delar med varandra.
             _animal = animal;
@@ -27,6 +27,7 @@ namespace Lab_6___OOP_Arv
             _legs = legs;
         }
 
+        //Tre metoder alla djur kommer dela med varandra.
         public virtual void Sleep()
         {
             Console.WriteLine("The animal is sleeping\n");

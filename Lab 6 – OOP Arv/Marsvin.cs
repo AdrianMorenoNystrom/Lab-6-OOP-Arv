@@ -8,9 +8,9 @@ namespace Lab_6___OOP_Arv
 {
     public class Marsvin : Animal
     {
-
+        //Unikt field för hamster som är vikt.
         public double Weight;
-
+        //Konstruktor för Marsvin med basvärden.
         public Marsvin(string animal="Marsvin", string gender="Hona", int age=2, string name="Luna", int legs=4,double weight=0.5)
             :base(animal,gender,age,name,legs)
         {
@@ -19,6 +19,7 @@ namespace Lab_6___OOP_Arv
 
         }
 
+        //Overridar metoderna jag skapade i Animal och gör unika för denna klass.
         public override void Sleep()
         {
             Console.WriteLine("Marsvinet sover");
